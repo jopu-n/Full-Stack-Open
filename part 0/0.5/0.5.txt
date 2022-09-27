@@ -1,0 +1,21 @@
+title Full Stack Open tehtävä 0.5
+
+Selain -> Palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+Palvelin --> Selain: HTML
+Selain -> Palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Palvelin --> Selain: css
+Selain -> Palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+Palvelin --> Selain: spa.js
+
+note over Selain:
+JS-koodi pyytää palvelimelta
+raakadataa muistiinpanoista
+end note
+
+Selain -> Palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Palvelin --> Selain: muistiinpanojen raakadata
+
+note over Selain:
+Muistiinpanot listataan näytölle
+tapahtumankäsittelijän avulla 
+end note

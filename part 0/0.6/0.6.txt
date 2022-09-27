@@ -1,0 +1,24 @@
+title Full Stack Open tehtävä 0.6
+
+note over Selain:
+Lähetettäessä tehtävä tapahtumankäsittelijä
+kutsuu metodia e.preventDefault(), joka estää 
+lomakkeen lähetyksen oletusarvoisen toiminnan. 
+end note
+
+note over Selain:
+JS-koodi lisää uuden muistiinpanon listalle,
+piirtää listan uudelleen sekä lähettää 
+uuden muistiinpanon palvelimelle.
+end note
+
+Selain -> Palvelin: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+Selain --> Palvelin: uusi muistiinpano
+Palvelin --> Selain: Status Code: 201 Created
+
+note over Palvelin:
+e.preventDefault():ista johtuen palvelin
+ei pyydä uudelleenohjausta eli redirectausta,
+ja vastaa kyselyyn statuskoodilla 201.
+end note
+
